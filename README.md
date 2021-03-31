@@ -42,5 +42,10 @@ Tidak boleh menggunakan AWK
 **Pembahasan**
 <br>(a) Untuk soal ini, hal yang harus dilakukan adalah mengumpulkan informasi dari file syslog.log, namun soal memintanya untuk memfilter informasi yang diperlukan menjadi (ERROR/INFO), pesan log, dan username. Oleh karena itu kita memakai perintah grep. Grep berguna untuk mencari pola dari suatu file sesuai pattern yang diberikan. 
 ![Screenshot_1](https://user-images.githubusercontent.com/42856438/113093936-0aecde80-921b-11eb-9799-2e8f5d27e886.jpg)
+Setelah itu, maka outputnya adalah sebagai berikut: 
+![Screenshot_3](https://user-images.githubusercontent.com/42856438/113094446-e2b1af80-921b-11eb-8e8e-da991be00a9f.jpg)
+
+
+<br>(b dan d) Untuk soal b dan soal d ini saling berhubungan. 
 
 
