@@ -2,8 +2,8 @@
 
 Kelompok E12 :
 <li>05111840000138 - Gema Adi Perwira
-<li>051119 - isi nama gaes
-<li>051119 - isi nama gaes
+<li>05111940000006 - Daffa Tristan Firdaus
+<li>05111940000211 - VICKY THIRDIAN
 
 **Soal 1.** 
 <br>Ryujin baru saja diterima sebagai IT support di perusahaan Bukapedia. Dia diberikan tugas untuk membuat laporan harian untuk aplikasi internal perusahaan, ticky. Terdapat 2 laporan yang harus dia buat, yaitu laporan daftar peringkat pesan error terbanyak yang dibuat oleh ticky dan laporan penggunaan user pada aplikasi ticky. Untuk membuat laporan tersebut, Ryujin harus melakukan beberapa hal berikut:
