@@ -26,14 +26,15 @@ Failed to connect to DB,2
 
 <br>(e) Semua informasi yang didapatkan pada poin c dituliskan ke dalam file user_statistic.csv dengan header Username,INFO,ERROR diurutkan berdasarkan username secara ascending.
 Contoh:
+```
 Username,INFO,ERROR
 kaori02,6,0
 kousei01,2,2
 ryujin.1203,1,3
-
+```
 Catatan :
 Setiap baris pada file syslog.log mengikuti pola berikut:
+```
  <time> <hostname> <app_name>: <log_type> <log_message> (<username>)
-
-
+ ```
 Tidak boleh menggunakan AWK
