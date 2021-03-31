@@ -48,6 +48,8 @@ Setelah itu, maka outputnya adalah sebagai berikut:
 
 <br>(b dan d) Untuk soal b dan soal d ini saling berhubungan. Langkah pertama yang dilakukan adalah menulis "Error,Count" dan menyimpannya di file error_message.csv sekaligus membuat file tersebut. Setelah itu, kita melakukan perintah grep dengan pattern seperti screenshot dibawah ini. Lalu terkahir, hasilnya ditambahkan dan disimpan di file error_message.csv
 ![Screenshot_2](https://user-images.githubusercontent.com/42856438/113095232-49839880-921d-11eb-81f9-04812e81a19d.jpg)
+Dan berikut adalah hasil akhir file error_message.csv
+![Screenshot_4](https://user-images.githubusercontent.com/42856438/113095424-98c9c900-921d-11eb-9449-852d85c8a5a6.jpg)
 
 
 
