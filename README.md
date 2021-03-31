@@ -17,10 +17,12 @@ Setelah semua informasi yang diperlukan telah disiapkan, kini saatnya Ryujin men
 
 <br>(d) Semua informasi yang didapatkan pada poin b dituliskan ke dalam file error_message.csv dengan header Error,Count yang kemudian diikuti oleh daftar pesan error dan jumlah kemunculannya diurutkan berdasarkan jumlah kemunculan pesan error dari yang terbanyak.
 Contoh:
+```
 Error,Count
 Permission denied,5
 File not found,3
 Failed to connect to DB,2
+```
 
 <br>(e) Semua informasi yang didapatkan pada poin c dituliskan ke dalam file user_statistic.csv dengan header Username,INFO,ERROR diurutkan berdasarkan username secara ascending.
 Contoh:
