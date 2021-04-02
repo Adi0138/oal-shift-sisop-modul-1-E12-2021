@@ -46,10 +46,12 @@ Tidak boleh menggunakan AWK
 Setelah itu, maka outputnya adalah sebagai berikut: 
 ![Screenshot_3](https://user-images.githubusercontent.com/42856438/113094446-e2b1af80-921b-11eb-8e8e-da991be00a9f.jpg)
 
-<br>(b dan d) Untuk soal b dan soal d ini saling berhubungan. Langkah pertama yang dilakukan adalah menulis "Error,Count" dan menyimpannya di file error_message.csv sekaligus membuat file tersebut. Setelah itu, kita melakukan perintah grep dengan pattern seperti screenshot dibawah ini. Lalu terkahir, hasilnya ditambahkan dan disimpan di file error_message.csv
+<br>(b dan d) Untuk soal b dan soal d ini saling berhubungan. Langkah pertama yang dilakukan adalah menamplikan "Error,Count" dan menyimpannya di file error_message.csv sekaligus membuat file tersebut. Setelah itu, kita melakukan perintah grep dengan pattern seperti screenshot dibawah ini. Lalu terkahir, hasilnya ditambahkan dan disimpan di file error_message.csv
 ![Screenshot_2](https://user-images.githubusercontent.com/42856438/113095232-49839880-921d-11eb-81f9-04812e81a19d.jpg)
 Dan berikut adalah hasil akhir file error_message.csv:
 <br>![Screenshot_4](https://user-images.githubusercontent.com/42856438/113095424-98c9c900-921d-11eb-9449-852d85c8a5a6.jpg)
+
+<br>(c dan e) Untuk soal c dan soal e ini juga saling berhubungan. Langkah pertama yang dilakukan adalah menampilkan "Username,INFO,ERROR" dan menyimpannya di file user_statistic.csv. 
 
 
 
