@@ -51,7 +51,7 @@ Setelah itu, maka outputnya adalah sebagai berikut:
 Dan berikut adalah hasil akhir file error_message.csv:
 <br>![Screenshot_4](https://user-images.githubusercontent.com/42856438/113095424-98c9c900-921d-11eb-9449-852d85c8a5a6.jpg)
 
-<br>(c dan e) Untuk soal c dan soal e ini juga saling berhubungan. Langkah pertama yang dilakukan adalah menampilkan "Username,INFO,ERROR" dan menyimpannya di file user_statistic.csv. 
+<br>(c dan e) Untuk soal c dan soal e ini juga saling berhubungan. Langkah pertama yang dilakukan adalah menampilkan "Username,INFO,ERROR" dan menyimpannya di file user_statistic.csv. Setelah itu, kita mengetikkan kode ```error=$(grep -Po "(?<=ERROR ).*(?<=\))" syslog.log)```. Tujuannya adalah mendapatkan semua pesan yang bertipe error hingga akhir baris lalu disimpan di variabel error. Lalu kita ketik kode ```info=$(grep -Po "(?<=INFO ).*(?<=\))" syslog.log)```. Tujuannya adalah mendapatkan semua pesan yang bertipe info hingga akhir baris.
 
 
 
