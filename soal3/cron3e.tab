@@ -1,0 +1,2 @@
+0 7 * * 1-5 bash /home/atenggen/sisop21/modul1/soal3d.sh
+0 18 * * 1-5 unzip -qP `date +"%m%d%Y"` Koleksi.zip && rm Koleksi.zip
