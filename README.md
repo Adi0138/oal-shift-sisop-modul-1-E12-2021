@@ -169,19 +169,18 @@ Tipe segmen customer yang penjualannya paling sedikit adalah Home Office dengan 
 Wilayah bagian (region) yang memiliki total keuntungan (profit) yang paling sedikit adalah Central dengan total keuntungan 39706.4
 ```
 
-**Soal 3** 
-<br>Kuuhaku adalah orang yang sangat suka mengoleksi foto-foto digital, namun Kuuhaku juga merupakan seorang yang pemalas sehingga ia tidak ingin repot-repot mencari foto, selain itu ia juga seorang pemalu, sehingga ia tidak ingin ada orang yang melihat koleksinya tersebut, sayangnya ia memiliki teman bernama Steven yang memiliki rasa kepo yang luar biasa. Kuuhaku pun memiliki ide agar Steven tidak bisa melihat koleksinya, serta untuk mempermudah hidupnya, yaitu dengan meminta bantuan kalian. Idenya adalah :
-
-<br>(a) Membuat script untuk mengunduh 23 gambar dari "https://loremflickr.com/320/240/kitten" serta menyimpan log-nya ke file "Foto.log". Karena gambar yang diunduh acak, ada kemungkinan gambar yang sama terunduh lebih dari sekali, oleh karena itu kalian harus menghapus gambar yang sama (tidak perlu mengunduh gambar lagi untuk menggantinya). Kemudian menyimpan gambar-gambar tersebut dengan nama "Koleksi_XX" dengan nomor yang berurutan tanpa ada nomor yang hilang (contoh : Koleksi_01, Koleksi_02, ...)
-
-<br>(b) Karena Kuuhaku malas untuk menjalankan script tersebut secara manual, ia juga meminta kalian untuk menjalankan script tersebut sehari sekali pada jam 8 malam untuk tanggal-tanggal tertentu setiap bulan, yaitu dari tanggal 1 tujuh hari sekali (1,8,...), serta dari tanggal 2 empat hari sekali(2,6,...). Supaya lebih rapi, gambar yang telah diunduh beserta log-nya, dipindahkan ke folder dengan nama tanggal unduhnya dengan format "DD-MM-YYYY" (contoh : "13-03-2023").
-
-<br>(c) Agar kuuhaku tidak bosan dengan gambar anak kucing, ia juga memintamu untuk mengunduh gambar kelinci dari "https://loremflickr.com/320/240/bunny". Kuuhaku memintamu mengunduh gambar kucing dan kelinci secara bergantian (yang pertama bebas. contoh : tanggal 30 kucing > tanggal 31 kelinci > tanggal 1 kucing > ... ). Untuk membedakan folder yang berisi gambar kucing dan gambar kelinci, nama folder diberi awalan "Kucing_" atau "Kelinci_" (contoh : "Kucing_13-03-2023").
-
-<br>(d) Untuk mengamankan koleksi Foto dari Steven, Kuuhaku memintamu untuk membuat script yang akan memindahkan seluruh folder ke zip yang diberi nama “Koleksi.zip” dan mengunci zip tersebut dengan password berupa tanggal saat ini dengan format "MMDDYYYY" (contoh : “03032003”).
-
-<br>(e) Karena kuuhaku hanya bertemu Steven pada saat kuliah saja, yaitu setiap hari kecuali sabtu dan minggu, dari jam 7 pagi sampai 6 sore, ia memintamu untuk membuat koleksinya ter-zip saat kuliah saja, selain dari waktu yang disebutkan, ia ingin koleksinya ter-unzip dan tidak ada file zip sama sekali.
 
 **Pembahasan**
 **Soal 3**
 <br>(a) Pada soal ini, diperintahkan untuk mengunduh 23 gambar yang setiap gambarnya itu tidak boleh ada yang sama. Dan tidak perlu mengunduh lagi gambar tersebut untuk menggantinya hingga berjumlah 23. Lalu diberikan format nama file tersebut seperti Koleksi_01, Koleksi_02, dst.
+Pertama dibuat looping hingga 23. Lalu dibatasi hingga 9 seperti berikut ini
+![Capture](https://user-images.githubusercontent.com/54606856/113511316-78856b80-9589-11eb-9931-b8935e61f361.JPG)
+Dibatasi 9 guna untuk dalam membuat indeks nama filenya. Dalam mendownload gambarnya digunakan syntax wget
+```wget -O Koleksi_0$n.jpg -a foto.log https://loremflickr.com/320/240/kitten``` -O disini untuk me-rename nama file tersebut dan -a disini agar tiap download tersimpan di foto.log dilanjutkan dengan linknya.
+Setelah itu dibuat looping dalam mendownload gambar lagi yang gunanya untuk membandingkan dengan syntax cmp antara kedua gambar tersebut yang bila ada terjadi kesamaan maka akan didelete. Untuk lebih jelasnya dapat dilihat seperti berikut.
+![Capture](https://user-images.githubusercontent.com/54606856/113511758-bb484300-958b-11eb-801d-7cba36655ffd.JPG)
+Jika lebih dari 9 maka dilakukan seperti ini
+![Capture](https://user-images.githubusercontent.com/54606856/113511872-3f9ac600-958c-11eb-8c4d-3b7378c61464.JPG)
+Dilooping kembali lalu dibandingkan antara kedua indeks tersbut. Jika ada yang sama maka ada didelete. Pada line 43 itu agar indeks yang terhapus tadi dilanjutkan hingga 23 kali
+
+
