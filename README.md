@@ -174,7 +174,9 @@ Wilayah bagian (region) yang memiliki total keuntungan (profit) yang paling sedi
 **Soal 3**
 <br>(a) Pada soal ini, diperintahkan untuk mengunduh 23 gambar yang setiap gambarnya itu tidak boleh ada yang sama. Dan tidak perlu mengunduh lagi gambar tersebut untuk menggantinya hingga berjumlah 23. Lalu diberikan format nama file tersebut seperti Koleksi_01, Koleksi_02, dst.
 Pertama dibuat looping hingga 23. Lalu dibatasi hingga 9 seperti berikut ini
+
 ![Capture](https://user-images.githubusercontent.com/54606856/113511316-78856b80-9589-11eb-9931-b8935e61f361.JPG)
+
 Dibatasi 9 guna untuk dalam membuat indeks nama filenya. Dalam mendownload gambarnya digunakan syntax wget
 ```wget -O Koleksi_0$n.jpg -a foto.log https://loremflickr.com/320/240/kitten``` -O disini untuk me-rename nama file tersebut dan -a disini agar tiap download tersimpan di foto.log dilanjutkan dengan linknya.
 Setelah itu dibuat looping dalam mendownload gambar lagi yang gunanya untuk membandingkan dengan syntax cmp antara kedua gambar tersebut yang bila ada terjadi kesamaan maka akan didelete. Untuk lebih jelasnya dapat dilihat seperti berikut.
