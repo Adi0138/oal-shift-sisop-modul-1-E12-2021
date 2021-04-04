@@ -187,4 +187,30 @@ Jika lebih dari 9 maka dilakukan seperti ini
 
 Dilooping kembali lalu dibandingkan antara kedua indeks tersbut. Jika ada yang sama maka ada didelete. Pada line 43 itu agar indeks yang terhapus tadi dilanjutkan hingga 23 kali
 
+<br>(b) Pada soal ini dibuat directory baru dengan format nama folder tersebut ialah tanggal sekarang dengan script ```$(date +"%d-%m-%Y")```
+lalu dirunning kembali script soal3a.sh itu dengan ```bash /home/atenggen/sisop21/modul1/soal3a.sh```. Lalu seluruh file tersebut di pindahkan ke folder yang baru tersebut beserta foto.log seperti ini.
+```
+mv ./Koleksi_* "./$newfolder"
+mv ./foto.log "./$newfolder"
+```
+Untuk crontabnya script 3b.sh tersebut dijalankan pada pukul 8. Tiap hari pertama dari kelipatan 7 hari dalam sebulan tersebut juga tiap 2 hari dari kelipatan 4 hari dalam sebulan itu. Seperti berikut ini
+```0 20 1-31/7,2-31/4 * * bash /home/atenggen/sisop21/modul1/soal3b.sh```
+
+<br>(c) Pada soal ini mirip dengan pengerjaan pada bagian a. Hanya saja perlu di cek bahwa hari sebelumnya tersebut kucing atau kelinci seperti berikut.
+
+![Capture](https://user-images.githubusercontent.com/54606856/113512307-3e6a9880-958e-11eb-87c9-6fc384c14b1e.JPG)
+
+sehingga akan dibuat directory baru. Misal jika kemarin kelinci maka akan dijalankan programnya untuk membuat directory Kucing. Setelah semuanya terunduh maka semua file tersebut dipindahkan ke folder kucing yang foldernya itu Kucing dengan tanggal sekarang seperti berikut ini.
+```
+mv ./Koleksi_* "./Kucing_$today/"
+mv ./foto.log "./Kucing_$today/"
+```
+<br>(d) Pada soal ini diperintahkan untuk menzipped hasil dari folder yang telah dijalankan sebelumnya serta diberikan password dengan passwordnya berupa tanggal sekarang. Untuk lebih jelasnya dapat dilihat seperti berikut. 
+```zip -er Koleksi.zip ./Kelinci* ./Kucing* -P `date +"%m%d%Y"` ```
+
+<br>(e) Pada soal ini pada jam 7 dihari senin hingga jumat dijalankan script soal3d.sh. Untuk lebih jelasnya dapat dilihat sebagai berikut. 
+```0 7 * * 1-5 bash /home/atenggen/sisop21/modul1/soal3d.sh```
+Pada pukul 6 sore atau 18.00 maka di unzipped  serta di remove menggunakan syntax rm.
+```0 18 * * 1-5 unzip -qP `date +"%m%d%Y"` Koleksi.zip && rm Koleksi.zip```
+
 
