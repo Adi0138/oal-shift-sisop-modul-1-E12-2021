@@ -178,9 +178,13 @@ Pertama dibuat looping hingga 23. Lalu dibatasi hingga 9 seperti berikut ini
 Dibatasi 9 guna untuk dalam membuat indeks nama filenya. Dalam mendownload gambarnya digunakan syntax wget
 ```wget -O Koleksi_0$n.jpg -a foto.log https://loremflickr.com/320/240/kitten``` -O disini untuk me-rename nama file tersebut dan -a disini agar tiap download tersimpan di foto.log dilanjutkan dengan linknya.
 Setelah itu dibuat looping dalam mendownload gambar lagi yang gunanya untuk membandingkan dengan syntax cmp antara kedua gambar tersebut yang bila ada terjadi kesamaan maka akan didelete. Untuk lebih jelasnya dapat dilihat seperti berikut.
+
 ![Capture](https://user-images.githubusercontent.com/54606856/113511758-bb484300-958b-11eb-801d-7cba36655ffd.JPG)
+
 Jika lebih dari 9 maka dilakukan seperti ini
+
 ![Capture](https://user-images.githubusercontent.com/54606856/113511872-3f9ac600-958c-11eb-8c4d-3b7378c61464.JPG)
+
 Dilooping kembali lalu dibandingkan antara kedua indeks tersbut. Jika ada yang sama maka ada didelete. Pada line 43 itu agar indeks yang terhapus tadi dilanjutkan hingga 23 kali
 
 
