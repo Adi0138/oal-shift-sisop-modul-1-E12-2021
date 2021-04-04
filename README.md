@@ -61,29 +61,29 @@ Dan berikut adalah hasil akhir file error_message.csv:
 
 <br>Tiap tahunnya, TokoShiSop mengadakan Rapat Kerja yang membahas bagaimana hasil penjualan dan strategi kedepannya yang akan diterapkan. Kamu sudah sangat menyiapkan sangat matang untuk raker tahun ini. Tetapi tiba-tiba, Steven, Manis, dan Clemong meminta kamu untuk mencari beberapa kesimpulan dari data penjualan “Laporan-TokoShiSop.tsv”.
 
-<br>(a) Steven ingin mengapresiasi kinerja karyawannya selama ini dengan mengetahui Row ID dan profit percentage terbesar (jika hasil profit percentage terbesar lebih dari 1, maka ambil Row ID yang paling besar). Karena kamu bingung, Clemong memberikan definisi dari profit percentage, yaitu:
+<br>(a) Steven ingin mengapresiasi kinerja karyawannya selama ini dengan mengetahui __Row ID__ dan __profit percentage terbesar__ (jika hasil profit percentage terbesar lebih dari 1, maka ambil Row ID yang paling besar). Karena kamu bingung, Clemong memberikan definisi dari profit percentage, yaitu:
 
-Profit Percentage = (Profit Cost Price) 100
+__Profit Percentage__ = (Profit Cost Price) 100
 
-Cost Price didapatkan dari pengurangan Sales dengan Profit. (Quantity diabaikan).
+Cost Price didapatkan dari pengurangan Sales dengan Profit. (__Quantity diabaikan__).
 
-<br>(b) Clemong memiliki rencana promosi di Albuquerque menggunakan metode MLM. Oleh karena itu, Clemong membutuhkan daftar nama customer pada transaksi tahun 2017 di Albuquerque.
+<br>(b) Clemong memiliki rencana promosi di Albuquerque menggunakan metode MLM. Oleh karena itu, Clemong membutuhkan daftar __nama customer pada transaksi tahun 2017 di Albuquerque__.
 
-<br>(c) TokoShiSop berfokus tiga segment customer, antara lain: Home Office, Customer, dan Corporate. Clemong ingin meningkatkan penjualan pada segmen customer yang paling sedikit. Oleh karena itu, Clemong membutuhkan segment customer dan jumlah transaksinya yang paling sedikit.
+<br>(c) TokoShiSop berfokus tiga segment customer, antara lain: Home Office, Customer, dan Corporate. Clemong ingin meningkatkan penjualan pada segmen customer yang paling sedikit. Oleh karena itu, Clemong membutuhkan __segment customer__ dan __jumlah transaksinya yang paling sedikit__.
 
-<br>(d) TokoShiSop membagi wilayah bagian (region) penjualan menjadi empat bagian, antara lain: Central, East, South, dan West. Manis ingin mencari wilayah bagian (region) yang memiliki total keuntungan (profit) paling sedikit dan total keuntungan wilayah tersebut.
+<br>(d) TokoShiSop membagi wilayah bagian (region) penjualan menjadi empat bagian, antara lain: Central, East, South, dan West. Manis ingin mencari __wilayah bagian (region) yang memiliki total keuntungan (profit) paling sedikit__ dan __total keuntungan wilayah tersebut__.
 
 <br>(e) Agar mudah dibaca oleh Manis, Clemong, dan Steven, kamu diharapkan bisa membuat sebuah script yang akan menghasilkan file “hasil.txt” yang memiliki format sebagai berikut:
 ```
-Transaksi terakhir dengan profit percentage terbesar yaitu *ID Transaksi* dengan persentase *Profit Percentage*%.
+Transaksi terakhir dengan profit percentage terbesar yaitu __*ID Transaksi*__ dengan persentase __*Profit Percentage*__%.
 
 Daftar nama customer di Albuquerque pada tahun 2017 antara lain:
-*Nama Customer1*
-*Nama Customer2* dst
+__*Nama Customer1*__
+__*Nama Customer2* dst__
 
-Tipe segmen customer yang penjualannya paling sedikit adalah *Tipe Segment* dengan *Total Transaksi* transaksi.
+Tipe segmen customer yang penjualannya paling sedikit adalah __*Tipe Segment*__ dengan __*Total Transaksi*__ transaksi.
 
-Wilayah bagian (region) yang memiliki total keuntungan (profit) yang paling sedikit adalah *Nama Region* dengan total keuntungan *Total Keuntungan (Profit)*
+Wilayah bagian (region) yang memiliki total keuntungan (profit) yang paling sedikit adalah __*Nama Region*__ dengan total keuntungan __*Total Keuntungan (Profit)*__
 ```
 <br>Catatan:
 <li>Gunakan bash, AWK, dan command pendukung
