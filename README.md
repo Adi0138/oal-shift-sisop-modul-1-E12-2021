@@ -75,15 +75,15 @@ Cost Price didapatkan dari pengurangan Sales dengan Profit. (__Quantity diabaika
 
 <br>(e) Agar mudah dibaca oleh Manis, Clemong, dan Steven, kamu diharapkan bisa membuat sebuah script yang akan menghasilkan file “hasil.txt” yang memiliki format sebagai berikut:
 ```
-Transaksi terakhir dengan profit percentage terbesar yaitu __*ID Transaksi*__ dengan persentase __*Profit Percentage*__%.
+Transaksi terakhir dengan profit percentage terbesar yaitu *ID Transaksi* dengan persentase *Profit Percentage*%.
 
 Daftar nama customer di Albuquerque pada tahun 2017 antara lain:
-__*Nama Customer1*__
-__*Nama Customer2* dst__
+*Nama Customer1*
+*Nama Customer2* dst
 
-Tipe segmen customer yang penjualannya paling sedikit adalah __*Tipe Segment*__ dengan __*Total Transaksi*__ transaksi.
+Tipe segmen customer yang penjualannya paling sedikit adalah *Tipe Segment* dengan *Total Transaksi* transaksi.
 
-Wilayah bagian (region) yang memiliki total keuntungan (profit) yang paling sedikit adalah __*Nama Region*__ dengan total keuntungan __*Total Keuntungan (Profit)*__
+Wilayah bagian (region) yang memiliki total keuntungan (profit) yang paling sedikit adalah *Nama Region* dengan total keuntungan *Total Keuntungan (Profit)*
 ```
 <br>Catatan:
 <li>Gunakan bash, AWK, dan command pendukung
